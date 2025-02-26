@@ -1,0 +1,34 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  
+
+body {
+    display: flex;
+}
+
+
+#image-container {
+    background-image: url(pine.jpg);
+    height: 100vh;
+    width: 100vw;
+}
+
+#logo {
+    height: 10rem;
+    display: flex;
+    background-color: blue;
+    opacity: 0.3;
+    color: white;
+    justify-content: center;
+}
+
+#credit {
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+
