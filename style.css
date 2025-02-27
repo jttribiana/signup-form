@@ -13,22 +13,56 @@ body {
 
 #image-container {
     background-image: url(pine.jpg);
+    width: 50%;
     height: 100vh;
-    width: 100vw;
+}
+#logo > h1,
+#logo > img {
+    height: 10rem;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
+
+
 #logo {
-    height: 10rem;
     display: flex;
-    background-color: blue;
-    opacity: 0.3;
-    color: white;
     justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 100px;
+    
 }
 
 #credit {
     color: white;
-    display: flex;
-    align-items: flex-end;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
+
+#image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#container {
+    margin: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
