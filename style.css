@@ -6,26 +6,29 @@
   }
   
 
+@font-face {
+    font-family: "Norse Bold";
+    src: url("Norse-Bold.otf") format("opentype"),
+  }
+
+
+
+  
 body {
     display: flex;
+    font-family: "Norse Bold", sans-serif;
 }
 
 
 #image-container {
-    background-image: url(pine.jpg);
-    width: 50%;
-    height: 100vh;
+    background:rgb(37, 16, 13) url("pine.jpg");
+    background-repeat: no-repeat;
+    width: 40%;
+    height:100vh;
+    background-size:100% 100%;
+    padding:0;
 }
-#logo > h1,
-#logo > img {
-    height: 10rem;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
+
 
 
 
@@ -33,10 +36,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.5);
     margin-top: 100px;
     
 }
+
+#logo > h1,
+#logo > img {
+    height: 10rem;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+
+
 
 #credit {
     color: white;
@@ -53,7 +70,6 @@ body {
 
 
 #container {
-    margin: 10px;
     background-color: #fefefe;
     display: flex;
     flex-direction: column;
@@ -67,7 +83,7 @@ form {
     flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
-    margin-top: 10px;
+    margin: 20px 0px;
     box-shadow: 
      0 8px 8px -8px rgba(0, 0, 0, 0.2),  /* Top shadow */
      0 -8px 8px -8px rgba(0, 0, 0, 0.2); /* Bottom shadow */
@@ -78,6 +94,8 @@ form {
 form div h2 {
     margin-top: 10px;
 }
+
+
 
 form div {
     display: flex;
@@ -101,16 +119,47 @@ body {
 }
 
 button {
-    background-color: green;
+    background-color: #596D48;
     color: white;
-    padding: 10px;
+    padding: 10px 30px;
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: none;
 }
 
 h2 {
     font-size: 16px;
     padding-bottom: 10px;
+    max-width: 55ch;
+    
+
 }
 
+
+p, h2, button, input, label {
+    margin: 2px 50px;
+}
+
+
+h1 {
+    font-family: "Norse Bold", sans-serif;
+    font-size: 100px;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
